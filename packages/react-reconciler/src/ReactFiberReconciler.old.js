@@ -7,7 +7,12 @@
  * @flow
  */
 
-import type {Fiber, Lane, LanePriority, SuspenseHydrationCallbacks} from './ReactInternalTypes';
+import type {
+  Fiber,
+  Lane,
+  LanePriority,
+  SuspenseHydrationCallbacks,
+} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
 import type {

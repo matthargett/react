@@ -7,7 +7,12 @@
  * @flow
  */
 
-import type {Fiber, Lane, LanePriority, SuspenseHydrationCallbacks} from './ReactInternalTypes';
+import type {
+  Fiber,
+  Lane,
+  LanePriority,
+  SuspenseHydrationCallbacks,
+} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
 import type {
@@ -37,10 +42,7 @@ import invariant from 'shared/invariant';
 import {enableSchedulingProfiler} from 'shared/ReactFeatureFlags';
 import ReactSharedInternals from 'shared/ReactSharedInternals';
 import {getPublicInstance} from './ReactFiberHostConfig';
-import {
-  createContainer,
-  updateContainer,
-} from './ReactFiberContainer.new';
+import {createContainer, updateContainer} from './ReactFiberContainer.new';
 import {
   findCurrentUnmaskedContext,
   processChildContext,

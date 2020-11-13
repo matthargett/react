@@ -10,15 +10,11 @@
 import type {Lane, SuspenseHydrationCallbacks} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
-import type {
-  Container,
-} from './ReactFiberHostConfig';
+import type {Container} from './ReactFiberHostConfig';
 import type {ReactNodeList} from 'shared/ReactTypes';
 
 import {get as getInstance} from 'shared/ReactInstanceMap';
-import {
-  ClassComponent,
-} from './ReactWorkTags';
+import {ClassComponent} from './ReactWorkTags';
 import getComponentName from 'shared/getComponentName';
 import {enableSchedulingProfiler} from 'shared/ReactFeatureFlags';
 import {

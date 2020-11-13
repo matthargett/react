@@ -13,11 +13,27 @@ import type {
   MutableSourceSubscribeFn,
   ReactContext,
 } from 'shared/ReactTypes';
-import type {Dispatcher, Fiber, FiberRoot, HookType, Lane, Lanes, ReactPriorityLevel} from './ReactInternalTypes';
+import type {
+  Dispatcher,
+  Fiber,
+  FiberRoot,
+  HookType,
+  Lane,
+  Lanes,
+  ReactPriorityLevel,
+} from './ReactInternalTypes';
 import type {HookFlags} from './ReactHookEffectTags';
-import {HasEffect as HookHasEffect, Layout as HookLayout, Passive as HookPassive,} from './ReactHookEffectTags';
+import {
+  HasEffect as HookHasEffect,
+  Layout as HookLayout,
+  Passive as HookPassive,
+} from './ReactHookEffectTags';
 import type {OpaqueIDType} from './ReactFiberHostConfig';
-import {makeClientId, makeClientIdInDEV, makeOpaqueHydratingObject,} from './ReactFiberHostConfig';
+import {
+  makeClientId,
+  makeClientIdInDEV,
+  makeOpaqueHydratingObject,
+} from './ReactFiberHostConfig';
 
 import ReactSharedInternals from 'shared/ReactSharedInternals';
 import {
@@ -44,7 +60,10 @@ import {
   setCurrentUpdateLanePriority,
 } from './ReactFiberLane';
 import {readContext} from './ReactFiberNewContext.old';
-import {Passive as PassiveEffect, Update as UpdateEffect,} from './ReactFiberFlags';
+import {
+  Passive as PassiveEffect,
+  Update as UpdateEffect,
+} from './ReactFiberFlags';
 import {
   getWorkInProgressRoot,
   markSkippedUpdateLanes,

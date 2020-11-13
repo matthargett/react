@@ -78,8 +78,6 @@ import getComponentName from 'shared/getComponentName';
 import is from 'shared/objectIs';
 import {markWorkInProgressReceivedUpdate} from './ReactFiberBeginWork.new';
 import {
-  UserBlockingPriority,
-  NormalPriority,
   runWithPriority,
   getCurrentPriorityLevel,
 } from './SchedulerWithReactIntegration.new';
@@ -98,6 +96,7 @@ import {
 import {getIsRendering} from './ReactCurrentFiber';
 import {logStateUpdateScheduled} from './DebugTracing';
 import {markStateUpdateScheduled} from './SchedulingProfiler';
+import {NormalPriority, UserBlockingPriority} from './SchedulerPriority';
 
 const {ReactCurrentDispatcher, ReactCurrentBatchConfig} = ReactSharedInternals;
 

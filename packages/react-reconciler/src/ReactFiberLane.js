@@ -7,7 +7,14 @@
  * @flow
  */
 
-import type {FiberRoot, Lane, LaneMap, LanePriority, Lanes, ReactPriorityLevel} from './ReactInternalTypes';
+import type {
+  FiberRoot,
+  Lane,
+  LaneMap,
+  LanePriority,
+  Lanes,
+  ReactPriorityLevel,
+} from './ReactInternalTypes';
 import invariant from 'shared/invariant';
 
 import {
@@ -17,7 +24,7 @@ import {
   NoPriority as NoSchedulerPriority,
   NormalPriority as NormalSchedulerPriority,
   UserBlockingPriority as UserBlockingSchedulerPriority,
-} from './SchedulerWithReactIntegration.new';
+} from './SchedulerPriority';
 
 export const SyncLanePriority: LanePriority = 15;
 export const SyncBatchedLanePriority: LanePriority = 14;

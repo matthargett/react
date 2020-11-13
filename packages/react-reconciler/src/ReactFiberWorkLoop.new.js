@@ -41,10 +41,6 @@ import {
   shouldYield,
   requestPaint,
   now,
-  NoPriority as NoSchedulerPriority,
-  ImmediatePriority as ImmediateSchedulerPriority,
-  UserBlockingPriority as UserBlockingSchedulerPriority,
-  NormalPriority as NormalSchedulerPriority,
   flushSyncCallbackQueue,
   scheduleSyncCallback,
 } from './SchedulerWithReactIntegration.new';
@@ -222,6 +218,12 @@ import {onCommitRoot as onCommitRootTestSelector} from './ReactTestSelectors';
 
 // Used by `act`
 import enqueueTask from 'shared/enqueueTask';
+import {
+  ImmediatePriority as ImmediateSchedulerPriority,
+  NoPriority as NoSchedulerPriority,
+  NormalPriority as NormalSchedulerPriority,
+  UserBlockingPriority as UserBlockingSchedulerPriority,
+} from './SchedulerPriority';
 
 const ceil = Math.ceil;
 

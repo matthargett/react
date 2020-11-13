@@ -87,10 +87,6 @@
 import type {Fiber, Lane, Lanes} from './ReactInternalTypes';
 
 import {NoLane, NoLanes, isSubsetOfLanes, mergeLanes} from './ReactFiberLane';
-import {
-  enterDisallowedContextReadInDEV,
-  exitDisallowedContextReadInDEV,
-} from './ReactFiberNewContext.new';
 import {Callback, ShouldCapture, DidCapture} from './ReactFiberFlags';
 
 import {debugRenderPhaseSideEffectsForStrictMode} from 'shared/ReactFeatureFlags';
@@ -101,6 +97,10 @@ import {markSkippedUpdateLanes} from './ReactFiberWorkLoop.new';
 import invariant from 'shared/invariant';
 
 import {disableLogs, reenableLogs} from 'shared/ConsolePatchingDev';
+import {
+  enterDisallowedContextReadInDEV,
+  exitDisallowedContextReadInDEV,
+} from './DisallowContextReadInDEV';
 
 export type Update<State> = {|
   // TODO: Temporary field. Will remove this by storing a map of
