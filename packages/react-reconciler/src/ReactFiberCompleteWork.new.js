@@ -7,8 +7,7 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
+import type {Fiber, Lane, Lanes} from './ReactInternalTypes';
 import type {
   ReactFundamentalComponentInstance,
   ReactScopeInstance,

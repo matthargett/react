@@ -13,8 +13,7 @@ import type {
   MutableSourceSubscribeFn,
   ReactContext,
 } from 'shared/ReactTypes';
-import type {Fiber, Dispatcher} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
+import type {Fiber, Dispatcher, Lane, Lanes} from './ReactInternalTypes';
 import type {HookFlags} from './ReactHookEffectTags';
 import type {ReactPriorityLevel} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';

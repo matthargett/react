@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {Fiber, SuspenseHydrationCallbacks} from './ReactInternalTypes';
+import type {Fiber, Lane, LanePriority, SuspenseHydrationCallbacks} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
 import type {
@@ -19,7 +19,6 @@ import type {
 import type {RendererInspectionConfig} from './ReactFiberHostConfig';
 import {FundamentalComponent} from './ReactWorkTags';
 import type {ReactNodeList} from 'shared/ReactTypes';
-import type {Lane, LanePriority} from './ReactFiberLane';
 import type {SuspenseState} from './ReactFiberSuspenseComponent.old';
 
 import {

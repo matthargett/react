@@ -7,9 +7,8 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lane, Lanes} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
-import type {Lane, Lanes} from './ReactFiberLane';
 import type {CapturedValue} from './ReactCapturedValue';
 import type {Update} from './ReactUpdateQueue.old';
 import type {Wakeable} from 'shared/ReactTypes';

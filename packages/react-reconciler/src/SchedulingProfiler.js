@@ -7,8 +7,7 @@
  * @flow
  */
 
-import type {Lane, Lanes} from './ReactFiberLane';
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lane, Lanes} from './ReactInternalTypes';
 import type {Wakeable} from 'shared/ReactTypes';
 
 import {enableSchedulingProfiler} from 'shared/ReactFeatureFlags';

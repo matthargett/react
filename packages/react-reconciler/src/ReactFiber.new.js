@@ -14,11 +14,10 @@ import type {
   ReactFundamentalComponent,
   ReactScope,
 } from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lanes} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
 import type {WorkTag} from './ReactWorkTags';
 import type {TypeOfMode} from './ReactTypeOfMode';
-import type {Lanes} from './ReactFiberLane';
 import type {SuspenseInstance} from './ReactFiberHostConfig';
 import type {OffscreenProps} from './ReactFiberOffscreenComponent';
 

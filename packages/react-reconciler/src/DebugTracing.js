@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {Lane, Lanes} from './ReactFiberLane';
 import type {Wakeable} from 'shared/ReactTypes';
 
 import {enableDebugTracing} from 'shared/ReactFeatureFlags';
+import type {Lane, Lanes} from './ReactInternalTypes';
 
 const nativeConsole: Object = console;
 let nativeConsoleLog: null | Function = null;

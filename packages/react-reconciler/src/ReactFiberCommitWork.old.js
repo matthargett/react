@@ -15,9 +15,8 @@ import type {
   ChildSet,
   UpdatePayload,
 } from './ReactFiberHostConfig';
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lanes} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
 import type {SuspenseState} from './ReactFiberSuspenseComponent.old';
 import type {UpdateQueue} from './ReactUpdateQueue.old';
 import type {FunctionComponentUpdateQueue} from './ReactFiberHooks.old';

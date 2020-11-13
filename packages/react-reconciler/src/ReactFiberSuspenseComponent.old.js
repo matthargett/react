@@ -8,9 +8,8 @@
  */
 
 import type {ReactNodeList, Wakeable} from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lane} from './ReactInternalTypes';
 import type {SuspenseInstance} from './ReactFiberHostConfig';
-import type {Lane} from './ReactFiberLane';
 import {SuspenseComponent, SuspenseListComponent} from './ReactWorkTags';
 import {NoFlags, DidCapture} from './ReactFiberFlags';
 import {

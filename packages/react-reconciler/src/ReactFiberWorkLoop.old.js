@@ -8,8 +8,7 @@
  */
 
 import type {Thenable, Wakeable} from 'shared/ReactTypes';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
+import type {Fiber, FiberRoot, Lane, Lanes} from './ReactInternalTypes';
 import type {ReactPriorityLevel} from './ReactInternalTypes';
 import type {Interaction} from 'scheduler/src/Tracing';
 import type {SuspenseState} from './ReactFiberSuspenseComponent.old';

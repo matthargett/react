@@ -7,8 +7,7 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
+import type {Fiber, Lanes} from './ReactInternalTypes';
 import type {SuspenseState} from './ReactFiberSuspenseComponent.new';
 
 import {resetWorkInProgressVersions as resetMutableSourceWorkInProgressVersions} from './ReactMutableSource.new';

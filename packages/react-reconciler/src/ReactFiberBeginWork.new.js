@@ -9,9 +9,8 @@
 
 import type {ReactProviderType, ReactContext} from 'shared/ReactTypes';
 import type {LazyComponent as LazyComponentType} from 'react/src/ReactLazy';
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber, Lane, Lanes} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
 import type {MutableSource} from 'shared/ReactTypes';
 import type {
   SuspenseState,

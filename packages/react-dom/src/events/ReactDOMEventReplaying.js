@@ -11,8 +11,7 @@ import type {AnyNativeEvent} from '../events/PluginModuleType';
 import type {Container, SuspenseInstance} from '../client/ReactDOMHostConfig';
 import type {DOMEventName} from '../events/DOMEventNames';
 import type {EventSystemFlags} from './EventSystemFlags';
-import type {FiberRoot} from 'react-reconciler/src/ReactInternalTypes';
-import type {LanePriority} from 'react-reconciler/src/ReactFiberLane';
+import type {FiberRoot, LanePriority} from 'react-reconciler/src/ReactInternalTypes';
 
 import {enableSelectiveHydration} from 'shared/ReactFeatureFlags';
 import {

@@ -9,22 +9,19 @@
 
 import type {Source} from 'shared/ReactElementType';
 import type {
-  RefObject,
-  ReactContext,
-  MutableSourceSubscribeFn,
-  MutableSourceGetSnapshotFn,
-  MutableSourceVersion,
   MutableSource,
+  MutableSourceGetSnapshotFn,
+  MutableSourceSubscribeFn,
+  MutableSourceVersion,
+  ReactContext,
+  RefObject,
+  Wakeable,
 } from 'shared/ReactTypes';
-import type {SuspenseInstance} from './ReactFiberHostConfig';
+import type {NoTimeout, SuspenseInstance, TimeoutHandle} from './ReactFiberHostConfig';
 import type {WorkTag} from './ReactWorkTags';
 import type {TypeOfMode} from './ReactTypeOfMode';
 import type {Flags} from './ReactFiberFlags';
-import type {Lane, LanePriority, Lanes, LaneMap} from './ReactFiberLane';
-import type {HookType} from './ReactFiberHooks.old';
 import type {RootTag} from './ReactRootTags';
-import type {TimeoutHandle, NoTimeout} from './ReactFiberHostConfig';
-import type {Wakeable} from 'shared/ReactTypes';
 import type {Interaction} from 'scheduler/src/Tracing';
 
 export type ReactPriorityLevel = 99 | 98 | 97 | 96 | 95 | 90;
@@ -36,11 +33,51 @@ export type ContextDependency<T> = {
   ...
 };
 
+// ROBLOX RODO: these were opaque, but failed to flow after moving them
+export type Lanes = number;
+export type Lane = number;
+export  type LaneMap<T> = Array<T>;
 export type Dependencies = {
   lanes: Lanes,
   firstContext: ContextDependency<mixed> | null,
   ...
 };
+export type LanePriority =
+    | 0
+    | 1
+    | 2
+    | 3
+    | 4
+    | 5
+    | 6
+    | 7
+    | 8
+    | 9
+    | 10
+    | 11
+    | 12
+    | 13
+    | 14
+    | 15
+    | 16
+    | 17;
+
+
+export type HookType =
+    | 'useState'
+    | 'useReducer'
+    | 'useContext'
+    | 'useRef'
+    | 'useEffect'
+    | 'useLayoutEffect'
+    | 'useCallback'
+    | 'useMemo'
+    | 'useImperativeHandle'
+    | 'useDebugValue'
+    | 'useDeferredValue'
+    | 'useTransition'
+    | 'useMutableSource'
+    | 'useOpaqueIdentifier';
 
 // A Fiber is work on a Component that needs to be done or was done. There can
 // be more than one per component.

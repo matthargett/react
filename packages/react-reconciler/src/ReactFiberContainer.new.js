@@ -7,14 +7,13 @@
  * @flow
  */
 
-import type {SuspenseHydrationCallbacks} from './ReactInternalTypes';
+import type {Lane, SuspenseHydrationCallbacks} from './ReactInternalTypes';
 import type {FiberRoot} from './ReactInternalTypes';
 import type {RootTag} from './ReactRootTags';
 import type {
   Container,
 } from './ReactFiberHostConfig';
 import type {ReactNodeList} from 'shared/ReactTypes';
-import type {Lane} from './ReactFiberLane';
 
 import {get as getInstance} from 'shared/ReactInstanceMap';
 import {
